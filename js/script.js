@@ -11,7 +11,7 @@ var nomeInserito = document.getElementById('cognome').value;
 // AGGIUNGO NOME
 listaNomi.push(nomeInserito);
 // ORDINO ALFABETICAMENTE
-listaNomi = listaNomi.sort();
+listaNomi.sort( (a, b) => a.localeCompare(b, {ignorePunctuation: true}));
 // STAMPO LISTA
 for (var i = 0; i < listaNomi.length; i++) {
   document.getElementById('lista-completa').innerHTML += "<li>" + listaNomi[i] + "</li>";
