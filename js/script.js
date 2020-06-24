@@ -4,6 +4,8 @@ var listaNomi = ["Rossi" , "Ferrari", "Bianchi" , "Donadoni"];
 var btnInviaNome = document.getElementById('invia-nome');
 // AL CLICK
 btnInviaNome.addEventListener( "click", function() {
+// CANCELLO CONTENUTO PRECEdENTE
+    document.getElementById('lista-completa').innerHTML = "";
 //PRENDO VALORE
 var nomeInserito = document.getElementById('cognome').value;
 // AGGIUNGO NOME
